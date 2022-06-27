@@ -1,0 +1,564 @@
+ .regcolmain{
+        margin-top: 50px;
+    }
+
+.rowchat{
+    border: 5px solid #1d3232;
+    background-color: #386659;
+    height: 600px;
+    max-height: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-y:auto;
+}
+
+.rowchat::-webkit-scrollbar {
+    width: 15px;
+    background-color: #333333;
+    height: 15px;
+}
+ 
+.rowchat::-webkit-scrollbar-thumb {
+  background-color: #2b884a;
+    border-radius: 100px;
+}
+.rowchat::-webkit-scrollbar-button{
+    height: 25px;
+}
+
+body::-webkit-scrollbar {
+    width: 1px;
+    background-color: #333333;
+    height: 1px;
+}
+
+.weryfikacja_c{
+    text-shadow: 5px 1px 50px  #212121;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #2b884a;
+    border-radius: 100px;
+}
+body::-webkit-scrollbar-button{
+    height: 25px;
+}
+.colzmianyele{
+    background-color: darkslategray;
+    margin-top: 25px;
+    padding-top: 10px;
+}
+body{
+    color: white;
+    font-family: 'Turret Road', cursive;
+    background-color: darkslategray;
+    font-size: 18px;
+    background-position:center;
+    background-size: cover;
+    background-repeat:no-repeat;
+
+}
+.br{
+    border: 2px solid red;
+}
+.reginput{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgb(0,0,0,0);
+    border: 1px solid rgb(128, 128, 128,0.5);
+    color: white;
+}
+.reginput:hover{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgb(0,0,0,0);
+    border: 1px solid #50c878;
+    cursor: pointer;
+    color: white;
+}
+.regbutton{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #50c878;
+    border: 0px;
+    color: white;
+    font-weight: 900;
+    transition: 0.3s;
+}
+.regbutton:hover{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #2b884a;
+    border: 0px;
+    color: white;
+    font-weight: 900;
+}
+.regcolmain{
+    padding-top: 40px;
+    padding-bottom: 25px;
+    background-color: #13232f;
+    box-shadow: 0px 0px 10px #1a1a1a;
+  
+}
+.reginput::placeholder {
+  color: white;
+}
+.regbuttonmini{
+    font-size: 13px;
+    border: 0px;
+    background-color: rgb(0,0,0,0);
+    border: 1px solid rgb(128, 128, 128,0.5);
+    color: white;
+    transition: 0.3s;
+    font-weight: 900;
+    padding-top: 4px;
+}
+.regbuttonmini:hover{
+    font-size: 13px;
+    border: 0px;
+    background-color: #50c878;
+    border: 1px solid #50c878;
+    color: white;
+    font-weight: 900;
+    padding-top: 4px;
+}
+.regminitext{
+    font-size: 13px;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.error{
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.errorwiad{
+    margin-bottom: 0px;
+}
+.success{
+    font-size: 18px;
+}
+.chwyb{
+    width: 400px;
+    overflow: hidden;
+}
+.chwyb2{
+    width: auto;
+    overflow: hidden;
+}
+
+.main {
+    display: block;
+    position: relative;
+    padding-top: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.main input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgb(128, 128, 128,0.5);
+    height: 50px;
+    width: 100%;
+    transition: 0.3s;
+    
+  background-color: rgb(0,0,0,0);
+}
+
+.main:hover input ~ .mark {
+    border: 1px solid #50c878;
+}
+
+.main input:checked ~ .mark {
+    border: 1px solid #50c878;
+}
+
+.main:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.main input:checked ~ .mark:after {
+  display: block;
+}
+
+.main .mark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.main2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    font-size: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.main2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.mark2 {
+    position: absolute;
+    top: -13%;
+    left: -13%;
+    border: 1px solid rgb(128, 128, 128,0.5);
+    width: 127%;
+    height: 127%;
+    transition: 0.3s;
+  background-color: rgb(0,0,0,0);
+}
+
+.main2:hover input ~ .mark2 {
+    border: 1px solid #50c878;
+}
+
+.main2 input:checked ~ .mark2 {
+    border: 1px solid #50c878;
+    background-color: #50c878;
+    opacity: 0.3;
+}
+
+.main2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.main2 input:checked ~ .mark2:after {
+  display: block;
+}
+
+.main2 .mark2:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.startcol{
+    margin-top: 150px;
+    color: white;
+}
+.starth1{
+    font-size: 45px;
+    text-shadow: 5px 1px 50px  #212121;
+    margin-bottom: 50px;
+}
+.startbutton{
+    width: 100%;
+    box-shadow: 0px 0px 100px #212121;
+    height: 75px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #50c878;
+    border: 0px;
+    color: white;
+    font-weight: 900;
+    transition: 0.3s;
+}
+.startbutton:hover{
+    width: 100%;
+    box-shadow: 0px 0px 100px #212121;
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #2b884a;
+    border: 0px;
+    color: white;
+    font-weight: 900;
+}
+.jezrow{
+    position: relative,fixed;
+    left: 15;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+.btnjezyk{
+    background-color: #2b2b2b;
+    color: white;
+    border-radius: 0px;
+    border: 0px;
+    padding: 3px;
+    width: 100%;
+}
+
+.btnjezyk:hover{
+    background-color: #50c878;
+    color: white;
+    border-radius: 0px;
+    border: 0px;
+    width: 100%;
+}
+
+.btnjezyk:focus{
+    background-color: #50c878;
+    color: white;
+    border-radius: 0px;
+    border: 0px;
+}
+
+
+.button[aria-expanded="true"]{
+    background-color: #50c878;
+    color: white;
+    border-radius: 0px;
+    border: 0px;
+}
+.btnjezyk , .show{
+    background-color: #2b2b2b;
+    color: white;
+    border-radius: 0px;
+}
+.rowmenu{
+    background-color: #2b2b2b;
+    padding-bottom: 0px;
+}
+.menuitem{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.menuitem:hover{
+    padding-top: 8px;
+    background-color: #50c878;
+    padding-bottom: 8px;
+}
+.dropdown-menu{
+    color: white;
+}.dropdown-item{
+    color: white;
+}.dropdown-item:hover{
+    background-color: #50c878;
+    color: white;
+}
+.reg2text1{
+    margin-top: 13px;
+}
+.reg2text2{
+    margin-top: 30px;
+}
+
+.tooltip{
+    background-color: rgb(0,0,0,0);
+    transform: none;
+}
+
+.tooltip-inner {
+  max-width: 236px !important;
+  height: 35px;
+font-family: 'Turret Road', cursive;
+  font-size: 18px;
+    padding-top: 4px;
+  background: #424242;
+    border-radius: 0px;
+  color: white;
+  text-align: center;
+}
+
+.tooltip.show {
+  opacity: 0.9;
+}
+.awatarnewfit2{
+    border: 3px solid #2b2b2b;
+
+    border-radius: 1px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.awatarnewfit2:hover{
+    border: 3px solid #50c878;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transform: scale(1.03);
+}
+.awatarnewfit{
+    border: 3px solid #2b2b2b;
+    border-radius: 1px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+.awatarnewfit:hover{
+    border: 3px solid #50c878;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transform: scale(1.03);
+}
+.tekstnewfit11{
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    margin-top: 50px;
+    color: #50c878;
+    border-bottom: 2px solid #2b2b2b;
+}
+.tekstnewfit12{
+    margin-top: 7px;
+    padding: 0px;
+    font-size: 22px;
+    color: gray;
+}
+.tekstnewfit11c{
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    color: indianred;
+}
+.tekstnewfit12c{
+    margin-top: 7px;
+    padding: 0px;
+    font-size: 22px;
+    color: gray;
+}
+.tekstnewfit11b{
+    color: gray;
+    font-size: 22px;
+}
+.tekstnewfit1{
+    margin-top: 0px;
+    color: #50c878
+}
+.tekstnewfit2{
+    color: #50c878;
+    cursor: pointer;
+    padding: 5px;
+    border: 3px solid #2b2b2b;
+    transition: 0.3s;
+}
+.tekstnewfit2:hover{
+    color: #50c878;
+    padding: 5px;
+    border: 3px solid #50c878;
+    transition: 0.3s;
+}
+.hrnewfit{
+    background-color: darkgoldenrod;
+    width: 80%;
+}
+
+.menuleftcol{
+    height: 100%;
+    background-color: #2e2e2e;
+}
+.tlo2{
+    background-color: #13232f;
+    height: auto !important;
+    min-height: 100%;
+    height: 100%;
+    width: 100vw;
+}
+.txa{
+    margin-bottom: 5px;
+}
+.menufriend{
+    padding: 0px;
+    margin: 0px;
+}
+.menufrienditem{
+    width: 100%;
+    border: 0px;
+    color: white;
+    background-color: #50c878;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.menufrienditem:hover{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #2b884a;
+}
+.panelm{
+    border: 2px solid rgb(26, 26, 26);
+    background-color: rgba(49, 49, 49, 0.212);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.menufrienditem2{
+    width: 100%;
+    border: 0px;
+    font-size: 18px;
+    color: white;
+    background-color: #363636;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.menufrienditem2:hover{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:  #50c878;
+}
+.menufriendtitle{
+    cursor: default;
+    margin-top: 8px;
+}
+.kraj{
+    margin-top: 5px;
+    font-size: 25px;
+}
+.downst{
+    position: fixed;
+    bottom: 0px;
+    left: 25px;
+}
